@@ -1,4 +1,7 @@
 baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+languageCode = 'zh-CN'
+title = 'Project for Saiba Midori'
 theme = 'midori'
+author = 'KFACBT'
+
+disableKinds = ["taxonomy", "term", "RSS"]
