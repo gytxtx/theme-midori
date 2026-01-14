@@ -79,7 +79,6 @@ jobs:
             hugo-
       - name: Build the site
         run: |
-          cd midori-page
           hugo \
             --gc \
             --minify \
