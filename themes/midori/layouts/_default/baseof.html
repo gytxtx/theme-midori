@@ -5,7 +5,8 @@
     {{ partial "head.html" . }}
 </head>
 
-<body style="--bg-img: url('{{ .Site.Params.backgroundImage | default "/images/default_bg.png" | absURL }}');">
+{{ $bg := .Site.Params.backgroundImage | default "images/default_bg.png" }}
+<body style="--bg-img: url('{{ $bg | relURL }}');">
     <div class="root">
         <div class="card">
             <header>
